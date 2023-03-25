@@ -15,7 +15,7 @@ class Pessoa (private val nome : String, private val dataNascimento: LocalDate){
     }
     fun pesquisarVeiculo(identificador: String) : Veiculo {
         for(veiculo : Veiculo in veiculos) {
-            if(veiculo.getIdentificador().equals(identificador)) {
+            if(veiculo.identificador == identificador) {
                 return veiculo
             }
         }
