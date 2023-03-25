@@ -4,17 +4,13 @@ import java.text.SimpleDateFormat
 class Carro(identificador: String, val motor: Motor) : Veiculo(identificador) {
     var ligado : Boolean = false
 
-    fun ligar() {
-        motor.ligar()
-    }
+    fun ligar() = motor.ligar()
 
-    fun desligar() {
-        motor.desligar()
-    }
 
-    fun estaLigado(): Boolean {
-        return motor.estaLigado()
-    }
+    fun desligar() = motor.desligar()
+
+
+    fun estaLigado(): Boolean = motor.estaLigado()
 
     override fun moverPara(x: Int, y: Int) {
         posicao?.alterarPosicaoPara(x, y)
@@ -26,9 +22,7 @@ class Carro(identificador: String, val motor: Motor) : Veiculo(identificador) {
         return data.toString()
     }
 
-    override fun requerCarta(): Boolean {
-        return true
-    }
+    override fun requerCarta(): Boolean = true
 
     override fun toString(): String {
         return "Carro | $identificador | ${dataFormatada()} | Posicao | $posicao"

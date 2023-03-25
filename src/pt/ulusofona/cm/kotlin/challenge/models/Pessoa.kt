@@ -5,14 +5,18 @@ import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoNaoEncontradoException
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.text.SimpleDateFormat
 import java.util.*
+import java.time.LocalDate
+import java.time.Period
+import java.time.ZoneId
+
 
 class Pessoa(val nome: String, val dataDeNascimento: Date) : Movimentavel {
-    val veiculos: List<Veiculo> = listOf()
+    val veiculos : MutableList<Veiculo> = mutableListOf()
     var carta: Carta? = null
     var posicao: Posicao = Posicao(0, 0)
 
     fun comprarVeiculo(veiculo: Veiculo) {
-        veiculos.plus(veiculo)
+        veiculos.add(veiculo)
     }
 
     fun pesquisarVeiculo(identificador: String): Veiculo? {
@@ -22,16 +26,13 @@ class Pessoa(val nome: String, val dataDeNascimento: Date) : Movimentavel {
     fun venderVeiculo(identificador: String, comprador: Pessoa) {
         val veiculo = pesquisarVeiculo(identificador)
         if (veiculo != null) {
-            veiculos.minus(veiculo)
+            veiculos.remove(veiculo)
             comprador.comprarVeiculo(veiculo)
         }
     }
 
     fun moverVeiculoPara(identificador: String, x: Int, y: Int) {
-        val veiculo = pesquisarVeiculo(identificador)
-        if (veiculo == null) {
-            throw VeiculoNaoEncontradoException()
-        }
+        val veiculo = pesquisarVeiculo(identificador) ?: throw VeiculoNaoEncontradoException()
         if (veiculo.requerCarta() && carta == null) {
             throw PessoaSemCartaException()
         }
@@ -52,13 +53,8 @@ class Pessoa(val nome: String, val dataDeNascimento: Date) : Movimentavel {
     }
 
     fun calculaIdade(dataDeNascimento: Date): Int {
-        val diaAtual = Calendar.getInstance()
-        val nascimento = Calendar.getInstance()
-        nascimento.time = dataDeNascimento
-        var idade = diaAtual.get(Calendar.YEAR) - nascimento.get(Calendar.YEAR)
-        if (diaAtual.get(Calendar.DAY_OF_YEAR) < nascimento.get(Calendar.DAY_OF_YEAR)) {
-            idade--
-        }
+        val nascimento = LocalDate.ofInstant(dataDeNascimento.toInstant(), ZoneId.systemDefault())
+        val idade = Period.between(nascimento, LocalDate.now()).years
         return idade
     }
 
@@ -71,7 +67,6 @@ class Pessoa(val nome: String, val dataDeNascimento: Date) : Movimentavel {
         val data = formato.format(dataDeNascimento)
         return data.toString()
     }
-
 
     override fun toString(): String {
         return "Pessoa | $nome | ${dataFormatada()} | ${posicao}"

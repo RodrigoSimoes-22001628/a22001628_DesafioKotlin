@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45258d13-eaf7-443b-8d42-320e87325894" name="Changes" comment="algumas alterações">
+    <list default="true" id="45258d13-eaf7-443b-8d42-320e87325894" name="Changes" comment="Erro de compilação">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Bicicleta.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Bicicleta.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Carro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Carro.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Carta.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Carta.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Motor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Motor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Pessoa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Pessoa.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +71,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679757602924</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Erro de compilação">
+      <created>1679758266988</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679758266988</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Erro de compilação">
+      <created>1679758334153</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679758334153</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,6 +102,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adição getIndentificador()" />
     <MESSAGE value="algumas alterações" />
-    <option name="LAST_COMMIT_MESSAGE" value="algumas alterações" />
+    <MESSAGE value="Erro de compilação" />
+    <option name="LAST_COMMIT_MESSAGE" value="Erro de compilação" />
   </component>
 </project>
