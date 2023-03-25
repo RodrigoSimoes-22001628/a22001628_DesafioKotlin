@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45258d13-eaf7-443b-8d42-320e87325894" name="Changes" comment="erros de compilação">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Motor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Motor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Pessoa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Pessoa.kt" afterDir="false" />
-    </list>
+    <list default="true" id="45258d13-eaf7-443b-8d42-320e87325894" name="Changes" comment="erros class Pessoa" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679776819388</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="erros class Pessoa">
+      <created>1679777307709</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679777307709</updated>
+    </task>
+    <task id="LOCAL-00017" summary="erros class Pessoa">
+      <created>1679777319407</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679777319407</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +183,7 @@
     <MESSAGE value="Erro de compilação" />
     <MESSAGE value="alterações" />
     <MESSAGE value="erros de compilação" />
-    <option name="LAST_COMMIT_MESSAGE" value="erros de compilação" />
+    <MESSAGE value="erros class Pessoa" />
+    <option name="LAST_COMMIT_MESSAGE" value="erros class Pessoa" />
   </component>
 </project>
