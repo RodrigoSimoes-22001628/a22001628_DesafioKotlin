@@ -1,5 +1,4 @@
 package pt.ulusofona.cm.kotlin.challenge.models
-
 import java.text.SimpleDateFormat
 
 class Carro(identificador: String, val motor: Motor) : Veiculo(identificador) {

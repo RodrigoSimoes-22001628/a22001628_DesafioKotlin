@@ -1,5 +1,4 @@
 package pt.ulusofona.cm.kotlin.challenge.models
-
 import pt.ulusofona.cm.kotlin.challenge.exceptions.MenorDeIdadeException
 import pt.ulusofona.cm.kotlin.challenge.exceptions.PessoaSemCartaException
 import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoNaoEncontradoException
@@ -72,6 +71,7 @@ class Pessoa(val nome: String, val dataDeNascimento: Date) : Movimentavel {
         val data = formato.format(dataDeNascimento)
         return data.toString()
     }
+
 
     override fun toString(): String {
         return "Pessoa | $nome | ${dataFormatada()} | ${posicao}"
