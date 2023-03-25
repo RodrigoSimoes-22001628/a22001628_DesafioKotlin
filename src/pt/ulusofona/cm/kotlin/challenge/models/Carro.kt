@@ -25,6 +25,6 @@ class Carro(identificador: String, val motor: Motor) : Veiculo(identificador), L
     override fun requerCarta(): Boolean = true
 
     override fun toString(): String {
-        return "Carro | $identificador | ${dataFormatada()} | Posicao | $posicao"
+        return "Carro | $identificador | ${dataFormatada()} | $posicao"
     }
 }
