@@ -11,7 +11,7 @@ import java.time.ZoneId
 
 
 class Pessoa(val nome: String, val  dataNascimento: Date) : Movimentavel {
-    val veiculos : MutableList<Veiculo> = mutableListOf()
+    var veiculos : MutableList<Veiculo> = mutableListOf()
     var carta: Carta? = null
     var posicao: Posicao = Posicao(0, 0)
 
@@ -20,7 +20,12 @@ class Pessoa(val nome: String, val  dataNascimento: Date) : Movimentavel {
     }
 
     fun pesquisarVeiculo(identificador: String): Veiculo? {
-        return veiculos.find { it.identificador == identificador }
+        val veiculo = veiculos.find { it.identificador == identificador }
+        if (veiculo != null){
+            return veiculo
+        }else{
+            throw VeiculoNaoEncontradoException()
+        }
     }
 
     fun venderVeiculo(identificador: String, comprador: Pessoa) {
@@ -36,6 +41,7 @@ class Pessoa(val nome: String, val  dataNascimento: Date) : Movimentavel {
         if (veiculo.requerCarta() && carta == null) {
             throw PessoaSemCartaException()
         }
+        moverPara(x,y)
         veiculo.moverPara(x, y)
     }
 
