@@ -5,9 +5,6 @@ import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoNaoEncontradoException
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.text.SimpleDateFormat
 import java.util.*
-import java.time.LocalDate
-import java.time.Period
-import java.time.ZoneId
 
 
 class Pessoa(val nome: String, val  dataNascimento: Date) : Movimentavel {
