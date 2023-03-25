@@ -53,8 +53,14 @@ class Pessoa(val nome: String, val dataDeNascimento: Date) : Movimentavel {
     }
 
     fun calculaIdade(dataDeNascimento: Date): Int {
-        val nascimento = LocalDate.ofInstant(dataDeNascimento.toInstant(), ZoneId.systemDefault())
-        return Period.between(nascimento, LocalDate.now()).years
+        val hoje = Calendar.getInstance()
+        val dataNascimento = Calendar.getInstance()
+       dataNascimento.time = dataDeNascimento
+        var idade = hoje.get(Calendar.YEAR) - dataNascimento.get(Calendar.YEAR)
+        if (hoje.get(Calendar.DAY_OF_YEAR) < dataNascimento.get(Calendar.DAY_OF_YEAR)) {
+            idade--
+        }
+        return idade
     }
 
     override fun moverPara(x: Int, y: Int) {
