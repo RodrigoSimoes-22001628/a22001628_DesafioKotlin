@@ -1,19 +1,19 @@
 package pt.ulusofona.cm.kotlin.challenge.models
 import java.text.SimpleDateFormat
-
-class Carro(identificador: String, val motor: Motor) : Veiculo(identificador) {
+import pt.ulusofona.cm.kotlin.challenge.interfaces.Ligavel
+class Carro(identificador: String, val motor: Motor) : Veiculo(identificador), Ligavel {
     var ligado : Boolean = false
 
-    fun ligar() = motor.ligar()
+   override fun ligar() = motor.ligar()
 
 
-    fun desligar() = motor.desligar()
+   override fun desligar() = motor.desligar()
 
 
-    fun estaLigado(): Boolean = motor.estaLigado()
+    override fun estaLigado(): Boolean = motor.estaLigado()
 
     override fun moverPara(x: Int, y: Int) {
-        posicao?.alterarPosicaoPara(x, y)
+        posicao!!.alterarPosicaoPara(x, y)
     }
 
     private fun dataFormatada(): String {

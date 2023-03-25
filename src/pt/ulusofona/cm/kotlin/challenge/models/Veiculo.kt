@@ -11,6 +11,6 @@ open class Veiculo(val identificador: String) : Movimentavel {
     }
 
     override fun moverPara(x: Int, y: Int) {
-        posicao?.alterarPosicaoPara(x, y)
+        posicao!!.alterarPosicaoPara(x, y)
     }
 }

@@ -13,7 +13,7 @@ class Bicicleta(identificador: String) : Veiculo(identificador) {
     }
 
     override fun moverPara(x: Int, y: Int) {
-        posicao?.alterarPosicaoPara(x, y)
+        posicao!!.alterarPosicaoPara(x, y)
     }
 
     override fun toString(): String {
