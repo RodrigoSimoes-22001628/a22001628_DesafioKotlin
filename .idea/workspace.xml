@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45258d13-eaf7-443b-8d42-320e87325894" name="Changes" comment="erros de compilação">
-      <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Pessoa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Pessoa.kt" afterDir="false" />
-    </list>
+    <list default="true" id="45258d13-eaf7-443b-8d42-320e87325894" name="Changes" comment="erros de compilação" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679775766990</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="erros de compilação">
+      <created>1679776053887</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679776053887</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

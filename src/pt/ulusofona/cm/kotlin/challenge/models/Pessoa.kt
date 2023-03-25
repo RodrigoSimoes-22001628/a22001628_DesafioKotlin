@@ -10,7 +10,7 @@ import java.time.Period
 import java.time.ZoneId
 
 
-class Pessoa(val nome: String, val dataDeNascimento: Date) : Movimentavel {
+class Pessoa(val nome: String, val  dataNascimento: Date) : Movimentavel {
     val veiculos : MutableList<Veiculo> = mutableListOf()
     var carta: Carta? = null
     var posicao: Posicao = Posicao(0, 0)
@@ -43,10 +43,10 @@ class Pessoa(val nome: String, val dataDeNascimento: Date) : Movimentavel {
         return carta != null
     }
 
-    fun tirarCarta(dataDeNascimento: Date): Carta {
-        val idade = calculaIdade(dataDeNascimento)
+    fun tirarCarta(){
+        val idade = calculaIdade(dataNascimento)
         if (idade >= 18) {
-            return Carta()
+            this.carta = Carta()
         } else {
             throw MenorDeIdadeException()
         }
@@ -69,7 +69,7 @@ class Pessoa(val nome: String, val dataDeNascimento: Date) : Movimentavel {
 
      fun dataFormatada(): String {
         val formato = SimpleDateFormat("dd-MM-yyyy")
-        val data = formato.format(dataDeNascimento)
+        val data = formato.format(dataNascimento)
         return data.toString()
     }
 
