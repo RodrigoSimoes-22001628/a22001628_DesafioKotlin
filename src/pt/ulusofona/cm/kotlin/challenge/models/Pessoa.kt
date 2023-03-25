@@ -10,7 +10,7 @@ import java.time.Period
 import java.time.ZoneId
 
 
-class Pessoa(val nome: String, val dataNascimento: Date) : Movimentavel {
+class Pessoa(val nome: String, val dataDeNascimento: Date) : Movimentavel {
     val veiculos : MutableList<Veiculo> = mutableListOf()
     var carta: Carta? = null
     var posicao: Posicao = Posicao(0, 0)
@@ -54,17 +54,16 @@ class Pessoa(val nome: String, val dataNascimento: Date) : Movimentavel {
 
     fun calculaIdade(dataDeNascimento: Date): Int {
         val nascimento = LocalDate.ofInstant(dataDeNascimento.toInstant(), ZoneId.systemDefault())
-        val idade = Period.between(nascimento, LocalDate.now()).years
-        return idade
+        return Period.between(nascimento, LocalDate.now()).years
     }
 
     override fun moverPara(x: Int, y: Int) {
         posicao.alterarPosicaoPara(x, y)
     }
 
-    private fun dataFormatada(): String {
+     fun dataFormatada(): String {
         val formato = SimpleDateFormat("dd-MM-yyyy")
-        val data = formato.format(dataNascimento)
+        val data = formato.format(dataDeNascimento)
         return data.toString()
     }
 
