@@ -13,7 +13,13 @@ class Carro(identificador: String, val motor: Motor) : Veiculo(identificador), L
     override fun estaLigado(): Boolean = motor.estaLigado()
 
     override fun moverPara(x: Int, y: Int) {
-        posicao.alterarPosicaoPara(x, y)
+        if (!estaLigado()){
+            ligar()
+            posicao.alterarPosicaoPara(x, y)
+        }else{
+            posicao.alterarPosicaoPara(x, y)
+        }
+        desligar()
     }
 
     private fun dataFormatada(): String {
