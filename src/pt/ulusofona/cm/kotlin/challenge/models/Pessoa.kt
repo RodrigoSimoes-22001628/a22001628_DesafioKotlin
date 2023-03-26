@@ -37,7 +37,7 @@ class Pessoa(val nome: String, val  dataNascimento: Date) : Movimentavel {
     fun moverVeiculoPara(identificador: String, x: Int, y: Int) {
         val veiculo = pesquisarVeiculo(identificador) ?: throw VeiculoNaoEncontradoException()
         if (veiculo.requerCarta() && carta == null) {
-            throw PessoaSemCartaException()
+            throw PessoaSemCartaException(nome)
         }
         moverPara(x,y)
         veiculo.moverPara(x, y)
