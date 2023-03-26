@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45258d13-eaf7-443b-8d42-320e87325894" name="Changes" comment="erros carta" />
+    <list default="true" id="45258d13-eaf7-443b-8d42-320e87325894" name="Changes" comment="erro pessoa sem carta">
+      <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Pessoa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Pessoa.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679778246767</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="erro pessoa sem carta">
+      <created>1679831549913</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679831549913</updated>
+    </task>
+    <task id="LOCAL-00023" summary="erro pessoa sem carta">
+      <created>1679831638269</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679831638269</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +229,7 @@
     <MESSAGE value="erros de compilação" />
     <MESSAGE value="erros class Pessoa" />
     <MESSAGE value="erros carta" />
-    <option name="LAST_COMMIT_MESSAGE" value="erros carta" />
+    <MESSAGE value="erro pessoa sem carta" />
+    <option name="LAST_COMMIT_MESSAGE" value="erro pessoa sem carta" />
   </component>
 </project>
